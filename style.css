@@ -1,18 +1,36 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f0f2f5;
+  font-family: 'Segoe UI]', sans-serif;
+  background-image: url("https://img.freepik.com/free-vector/abstract-watercolor-background_23-2149059283.jpg?t=st=1745654009~exp=1745657609~hmac=13f7729a9e0ffeb93056060e6f7d4a1cb3ddadd238b159b97241a8101bdb981f&w=996");
+  background-attachment: fixed;
   margin: 0;
   padding: 0;
-  color: #333;
-}
+  color: #333;  
+  animation: fadeInAnimation ease 3s;
+            animation-iteration-count: 1;
+            animation-fill-mode: forwards;
+        }
+        @keyframes fadeInAnimation {
+            0% {
+                opacity: 0;
+            }
 
+            100% {
+                opacity: 1;
+}
+        }
 .container {
   max-width: 900px;
   margin: auto;
   padding: 20px;
 }
 
-h1, h2 {
+h1 {
+  color: #2c3e50;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+}
+h2 {
   color: #2c3e50;
   margin-bottom: 10px;
 }
@@ -74,8 +92,8 @@ th {
 }
 
 #previewBox {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   border: 2px solid #333;
   display: inline-block;
   margin-left: 10px;
@@ -98,3 +116,35 @@ section {
 section:hover {
   box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
+  #popup-overlay {
+       position: fixed;
+       top: 0;
+       left: 0;
+       width: 100%;
+       height: 100%;
+       background-color: rgba(0, 0, 0, 0.5); /* Semi-transparan */
+       display: none; /* Awalnya disembunyikan */
+       z-index: 10; /* Agar di atas konten lain */
+   }
+
+   .popup-hidden {
+       display: none; /* Awalnya disembunyikan */
+   }
+
+   #popup-contact-us {
+       position: absolute;
+       top: 20px; /* Posisi atas */
+       right: 20px; /* Posisi kanan */
+       background-color: #fff;
+       padding: 20px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+       z-index: 11; /* Agar di atas overlay */
+   }
+
+   .popup-close {
+       position: absolute;
+       top: 5px;
+       right: 5px;
+       cursor: pointer;
+   }

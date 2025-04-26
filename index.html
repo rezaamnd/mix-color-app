@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MIXING COLOR</title>
+  <link rel="icon" type="image/png" href="https://bagsbutler.com/wp-content/uploads/2018/04/bb-logo-860x800.png" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <h1 align=" center"> MIXING COLOR BETA </h1>
+
+    <section class="reference-section">
+      <h2>📘 Warna Referensi</h2>
+      <form id="refForm">
+        <input type="text" id="refName" placeholder="Nama Warna" required />
+        <input type="color" id="refColor" />
+        <button type="submit">Tambah Warna</button>
+      </form>
+      <table id="refTable">
+        <thead>
+          <tr><th>Nama</th><th>Warna</th><th>Hex Code</th><th>Keterangan</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="target-section">
+      <h2>🔍 Cari Warna</h2>
+      <input type="text" id="targetHex" placeholder="#Hex" />
+      <input type="color" id="targetPicker" />
+      <div id="previewBox"></div>
+      <button id="findMix">Cari Campuran</button>
+    </section>
+
+    <section class="result-section">
+      <h2>📊 Hasil Pencarian</h2>
+      <table id="resultTable">
+        <thead>
+          <tr><th>Nama Warna</th><th>Warna</th><th>Hex Code</th><th>Persentase (%)</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="convert-section">
+      <h2>⚖️ Konversi ke Gram/Mililiter</h2>
+      <label>Total Berat/Volume (gr/ml): <input type="number" id="totalWeight" value="0" /></label>
+      <table id="convertTable">
+        <thead>
+          <tr><th>Nama Warna</th><th>Berat/Volume</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  <i align="right"> by Adan</i>
+</body>
+</html>
+  
